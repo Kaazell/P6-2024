@@ -1,3 +1,10 @@
+import { Outlet } from "react-router-dom";
+
 export function App() {
-  return <>Hello</>;
+  return (
+    <div>
+      Hello
+      <Outlet />
+    </div>
+  );
 }
