@@ -1,0 +1,9 @@
+.gallery {
+    width: 100%;
+    height:min-content;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
