@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    width: 250px;
+    height: auto;
+}
+.navlink{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    li {
+        font-size: 22px;
+        font-weight: 420;
+        margin-left: 60px;
+        color: #ff6060;
+        letter-spacing: 0.7px;
+        &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
