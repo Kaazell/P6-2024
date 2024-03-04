@@ -1,7 +1,20 @@
 .galleryItem {
+    font-weight: 400;
+    color: white;
     margin: 40px 20px;
     width: 25%;
     min-width: 344px;
     height: 344px;
     background-color: #ff6060;
-    border-radius: 10px;}
+    box-shadow: inset 0px -90px 60px -50px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-end;
+
+    span {
+        display: block;
+        width: 30%;
+        margin: 15px;
+        letter-spacing: 1px;
+    }
+    }
