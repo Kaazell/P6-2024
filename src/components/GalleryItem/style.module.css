@@ -1,6 +1,7 @@
 .galleryItem {
-    width: 340px;
-    height: 340px;
+    margin: 40px 20px;
+    width: 25%;
+    min-width: 344px;
+    height: 344px;
     background-color: #ff6060;
-    border-radius: 10px;
-}
+    border-radius: 10px;}
