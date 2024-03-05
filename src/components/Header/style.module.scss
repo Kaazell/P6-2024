@@ -22,3 +22,16 @@
         }
     }
 }
+button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chevron {
+    transition: transform 0.3s ease; /* Animation de rotation douce */
+  }
+  
+.chevronDown {
+    transform: rotate(180deg); /* Rotation de 180 degrés pour le chevron vers le haut */
+  }
+  
