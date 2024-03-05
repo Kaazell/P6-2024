@@ -1,4 +1,5 @@
 import s from "./style.module.css";
+import { FiveStarRating } from "../FiveStarRating/FiveStarRating";
 
 export function DescriptionData(props) {
   return (
@@ -13,9 +14,12 @@ export function DescriptionData(props) {
             <div>Paris 10</div>
           </div>
         </div>
-        <div className={s.author}>
-          <div className={s.author_name}>Alexandre Dumas</div>
-          <div className={s.profile_pic}></div>
+        <div className={s.author_stars_container}>
+          <div className={s.author}>
+            <div className={s.author_name}>Alexandre Dumas</div>
+            <div className={s.profile_pic}></div>
+          </div>
+          <FiveStarRating />
         </div>
       </div>
       <div className={s.lower_section}>
