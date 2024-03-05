@@ -4,9 +4,9 @@ export function DropdownButton({ buttonText }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const options = [
-    { id: 1, label: "Option 1" },
-    { id: 2, label: "Option 2" },
-    { id: 3, label: "Option 3" },
+    { id: 1, label: "Climatisation" },
+    { id: 2, label: "Wi-Fi" },
+    { id: 3, label: "Cuisines" },
   ];
 
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -17,11 +17,11 @@ export function DropdownButton({ buttonText }) {
         {buttonText}
       </button>
       {isOpen && (
-        <ul>
+        <div className={s.list}>
           {options.map((option) => (
-            <li key={option.id}>{option.label}</li>
+            <p key={option.id}>{option.label}</p>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
