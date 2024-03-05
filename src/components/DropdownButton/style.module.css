@@ -35,3 +35,19 @@
 
     }
 }
+.button_title {
+    display: flex;
+    justify-content: space-between;
+}
+.list {
+    opacity: 0; /* Initial state */
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth transition for opacity and max-height */
+  }
+  
+  .list.open {
+    opacity: 1; /* Final state */
+    max-height: 500px; /* Adjust this value based on the maximum height you expect your list to have */
+  }
+  

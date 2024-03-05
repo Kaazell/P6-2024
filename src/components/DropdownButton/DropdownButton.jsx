@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ChevronUp } from "react-bootstrap-icons";
 import s from "./style.module.css";
-
 export function DropdownButton({ buttonText }) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,13 +23,11 @@ export function DropdownButton({ buttonText }) {
           }}
         />
       </button>
-      {isOpen && (
-        <div className={s.list}>
-          {options.map((option) => (
-            <p key={option.id}>{option.label}</p>
-          ))}
-        </div>
-      )}
+      <div className={`${s.list} ${isOpen ? s.open : ""}`}>
+        {options.map((option) => (
+          <p key={option.id}>{option.label}</p>
+        ))}
+      </div>
     </div>
   );
 }
