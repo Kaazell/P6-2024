@@ -13,9 +13,9 @@ export function DescriptionData(props) {
             <div>Paris 10</div>
           </div>
         </div>
-        <div>
-          <div>Alexandre Dumas</div>
-          <div>Cercle</div>
+        <div className={s.author}>
+          <div className={s.author_name}>Alexandre Dumas</div>
+          <div className={s.profile_pic}></div>
         </div>
       </div>
       <div className={s.lower_section}>
