@@ -17,10 +17,3 @@ export function Gallery() {
     </div>
   );
 }
-
-// json.map((photo) => (
-//   <img src={photo.pictures[0]} />
-//   ))
-{
-  /* <GalleryItem onClick={navigate} /> */
-}
