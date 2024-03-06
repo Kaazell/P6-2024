@@ -53,3 +53,11 @@
         border-radius: 7px;
     }
 }
+
+.lower_section{
+    display: flex;
+    justify-content: space-between;
+    > * {
+        width: 49%;
+    }
+}

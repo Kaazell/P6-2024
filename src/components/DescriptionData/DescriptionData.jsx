@@ -1,5 +1,6 @@
 import s from "./style.module.css";
 import { FiveStarRating } from "../FiveStarRating/FiveStarRating";
+import { DropdownButton } from "../DropdownButton/DropdownButton";
 
 export function DescriptionData(props) {
   return (
@@ -23,8 +24,8 @@ export function DescriptionData(props) {
         </div>
       </div>
       <div className={s.lower_section}>
-        <h3>Description</h3>
-        <h3>Equipements</h3>
+        <DropdownButton buttonText={"Description"} />
+        <DropdownButton buttonText={"Equipement"} />
       </div>
     </div>
   );
