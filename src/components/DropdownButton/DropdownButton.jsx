@@ -8,14 +8,6 @@ export function DropdownButton({ buttonText }) {
     { id: 1, label: "Climatisation" },
     { id: 2, label: "Wi-Fi" },
     { id: 3, label: "Cuisines" },
-    { id: 3, label: "Cuisines" },
-    { id: 3, label: "Cuisines" },
-    { id: 3, label: "Cuisines" },
-    { id: 3, label: "Cuisines" },
-    { id: 3, label: "Cuisines" },
-    { id: 3, label: "Cuisines" },
-    { id: 3, label: "Cuisines" },
-    { id: 3, label: "Cuisines" },
   ];
 
   const toggleDropdown = () => setIsOpen(!isOpen);

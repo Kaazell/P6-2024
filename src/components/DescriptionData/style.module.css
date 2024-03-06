@@ -55,8 +55,10 @@
 }
 
 .lower_section{
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    align-content: flex-start;
     > * {
         width: 49%;
     }
