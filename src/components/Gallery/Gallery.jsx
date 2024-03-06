@@ -11,8 +11,7 @@ export function Gallery() {
         <GalleryItem
           key={item.id}
           title={item.title}
-          cover={item.cover}
-          pictures={item.pictures[0]}
+          picture={item.pictures[0]}
         />
       ))}
     </div>

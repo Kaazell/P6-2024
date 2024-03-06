@@ -1,11 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import s from "./style.module.css";
 
-export function GalleryItem() {
+export function GalleryItem({ key, title, picture }) {
   const navigate = useNavigate();
   return (
     <div onClick={() => navigate("/description")} className={s.galleryItem}>
-      <span>Titre de la location</span>
+      <img src={picture} alt="" />
+      <span key={key}>{title}</span>
     </div>
   );
 }
