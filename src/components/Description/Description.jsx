@@ -59,9 +59,9 @@ export function Description() {
             <h1>{currentItem.title}</h1>
             <h2>{currentItem.location}</h2>
             <div className={s.tags}>
-              <div>Cozy</div>
-              <div>Canal</div>
-              <div>Paris 10</div>
+              {currentItem.tags.map((tag) => (
+                <div>{tag}</div>
+              ))}
             </div>
           </div>
           <div className={s.author_stars_container}>

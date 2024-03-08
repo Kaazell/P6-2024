@@ -51,8 +51,8 @@
 
 .tags{
     display: flex;
-    justify-content: space-between;
     width: 380px;
+    
     > *{
         display: block;
         text-align: center;
@@ -60,6 +60,7 @@
         width: 120px;
         color: white;
         border-radius: 7px;
+        margin-right: 10px;
     }
 }
 

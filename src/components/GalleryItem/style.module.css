@@ -1,8 +1,8 @@
 .galleryItem {
     font-weight: 400;
     color: white;
-    margin: 40px 20px;
     width: 25%;
+    max-width: 344px;
     min-width: 344px;
     height: 344px;
     background-color: #ff6060;

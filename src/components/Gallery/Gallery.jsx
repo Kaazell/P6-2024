@@ -7,7 +7,11 @@ export function Gallery() {
   return (
     <div className={s.gallery}>
       {json.map((item) => (
-        <div key={item.id} onClick={() => navigate("/description/" + item.id)}>
+        <div
+          className={s.galleryItem_container}
+          key={item.id}
+          onClick={() => navigate("/description/" + item.id)}
+        >
           <GalleryItem
             title={item.title}
             picture={item.pictures}
