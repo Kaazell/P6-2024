@@ -53,7 +53,6 @@ export function Description() {
           width={100}
         />
       </div>
-      <img src={currentItem.host.picture} alt="" />
 
       <div className={s.main_container}>
         <div className={s.upper_section}>
@@ -73,7 +72,7 @@ export function Description() {
                 <img src={currentItem.host.picture} alt="" />
               </div>
             </div>
-            <FiveStarRating />
+            <FiveStarRating rating={currentItem.rating} />
           </div>
         </div>
         <div className={s.lower_section}>
