@@ -32,10 +32,15 @@
     max-height: 0;
     overflow: hidden;
     transition: opacity 0.3s ease, max-height 0.3s ease; /* Smooth transition for opacity and max-height */
-  }
+}
+
+.list:last-child {
+
+    margin-bottom: 10px;
+}
   
-  .list.open {
+.list.open {
     opacity: 1; /* Final state */
-    max-height: 100px; /* Adjust this value based on the maximum height you expect your list to have */
-  }
+    max-height: 300px; /* Adjust this value based on the maximum height you expect your list to have */
+}
   

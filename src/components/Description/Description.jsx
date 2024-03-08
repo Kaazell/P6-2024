@@ -76,8 +76,14 @@ export function Description() {
           </div>
         </div>
         <div className={s.lower_section}>
-          <DropdownButton buttonText={"Description"} />
-          <DropdownButton buttonText={"Equipement"} />
+          <DropdownButton
+            buttonText={"Description"}
+            description={currentItem.description}
+          />
+          <DropdownButton
+            buttonText={"Equipement"}
+            equipement={currentItem.equipments}
+          />
         </div>
       </div>
     </div>
