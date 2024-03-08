@@ -2,7 +2,6 @@ import s from "./style.module.css";
 import { GalleryItem } from "../GalleryItem/GalleryItem";
 import json from "../../assets/json/logements.json";
 import { useNavigate } from "react-router-dom";
-console.log(json);
 export function Gallery() {
   const navigate = useNavigate();
   return (

@@ -1,20 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import s from "./style.module.css";
 import { Description } from "../Description/Description";
+import { useLocation } from "react-router-dom";
 
-export function GalleryItem({ key, title, picture, currentData }) {
+export function GalleryItem({ title, picture, currentData }) {
   const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/description", { state: { title, picture, currentData } });
+  };
   return (
-    <div
-      key={key}
-      onClick={() => (
-        <Description
-          title={title}
-          picture={picture}
-          currentData={currentData}
-        />
-      )}
-      className={s.galleryItem}
-    ></div>
+    <div className={s.galleryItem} onClick={handleClick}>
+      <img src={picture[0]} alt={title} />
+    </div>
   );
 }

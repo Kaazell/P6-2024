@@ -5,13 +5,22 @@ import ChevronLeft from "../../assets/images/chevron-left.svg";
 import ChevronRight from "../../assets/images/chevron-right.svg";
 import { FiveStarRating } from "../FiveStarRating/FiveStarRating";
 import { DropdownButton } from "../DropdownButton/DropdownButton";
+import { useLocation } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-export function Description({ key, title, picture, currentData }) {
-  const appart = json.filter((obj) => obj.id === "c67ab8a7");
-  const photos = appart[0].pictures;
+export function Description() {
+  const { id } = useParams();
+  const currentItem = json.find((item) => item.id === id); // Trouver l'élément correspondant dans votre JSON
+  const location = useLocation();
+  console.log(location.state);
+  const photos = currentItem.pictures;
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  if (!currentItem) {
+    return <div>Item non trouvé</div>; // Gérer l'absence de données comme vous le souhaitez
+  }
 
   // L'état initial est 0, pour la première image du tableau.
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const nextImage = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === photos.length - 1 ? 0 : prevIndex + 1
@@ -26,6 +35,7 @@ export function Description({ key, title, picture, currentData }) {
 
   return (
     <div>
+      {currentItem.id}
       <div className={s.container}>
         <img
           className={s.ChevronLeft}
@@ -46,8 +56,8 @@ export function Description({ key, title, picture, currentData }) {
       <div className={s.main_container}>
         <div className={s.upper_section}>
           <div>
-            <h1>Cozy loft on the Canal Saint-Martin</h1>
-            <h2>Paris, Île de France</h2>
+            <h1>{currentItem.title}</h1>
+            <h2>{currentItem.location}</h2>
             <div className={s.tags}>
               <div>Cozy</div>
               <div>Canal</div>
@@ -56,7 +66,7 @@ export function Description({ key, title, picture, currentData }) {
           </div>
           <div className={s.author_stars_container}>
             <div className={s.author}>
-              <div className={s.author_name}>Alexandre Dumas</div>
+              <div className={s.author_name}>{currentItem.host.name}</div>
               <div className={s.profile_pic}></div>
             </div>
             <FiveStarRating />
