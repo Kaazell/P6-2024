@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ChevronUp } from "react-bootstrap-icons";
 import s from "./style.module.css";
-export function AboutItem() {
+export function AboutItem({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = () => setIsOpen(!isOpen);
@@ -9,7 +9,7 @@ export function AboutItem() {
   return (
     <div className={s.container}>
       <button className={s.button_title} onClick={toggleDropdown}>
-        AboutItem
+        {title}
         <ChevronUp
           style={{
             transform: isOpen ? "rotate(180deg)" : "rotate(0deg)",
@@ -17,7 +17,9 @@ export function AboutItem() {
           }}
         />
       </button>
-      <div className={`${s.list} ${isOpen ? s.open : ""}`}>hello</div>
+      <div className={`${s.list} ${isOpen ? s.open : ""}`}>
+        <p>{content}</p>
+      </div>
     </div>
   );
 }
