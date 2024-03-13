@@ -4,8 +4,26 @@
     border-radius: 20px;
     object-fit: cover;
     margin: 30px 0;
-
 }
+.container{
+    position: relative;
+}
+.container button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.leftButton {
+    left: 0; /* Déplacer le bouton de gauche tout à gauche */
+}
+
+.rightButton {
+    right: 0; /* Déplacer le bouton de droite tout à droite */
+}
+
 
 .main_container{
     color: #FF6060;
@@ -77,4 +95,5 @@
     > * {
         width: 49%;
     }
-}
+} 
+

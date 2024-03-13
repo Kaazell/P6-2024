@@ -35,23 +35,14 @@ export function Description() {
 
   return (
     <div>
-      {currentItem.id}
       <div className={s.container}>
-        <img
-          className={s.ChevronLeft}
-          onClick={prevImage}
-          src={ChevronLeft}
-          alt=""
-          width={100}
-        />
         <img className={s.banner} src={photos[currentImageIndex]} alt="props" />
-        <img
-          className={s.ChevronRight}
-          onClick={nextImage}
-          src={ChevronRight}
-          alt=""
-          width={100}
-        />
+        <button className={s.leftButton} onClick={prevImage}>
+          <img src={ChevronLeft} width={100} alt="" />
+        </button>
+        <button className={s.rightButton} onClick={nextImage}>
+          <img src={ChevronRight} width={100} alt="" />
+        </button>
       </div>
 
       <div className={s.main_container}>
