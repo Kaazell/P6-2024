@@ -15,6 +15,10 @@
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    color: white;
+    font-size: 36px;
+    margin: 40px
+
 }
 .leftButton {
     left: 0; /* Déplacer le bouton de gauche tout à gauche */

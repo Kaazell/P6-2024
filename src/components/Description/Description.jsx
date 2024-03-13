@@ -38,10 +38,10 @@ export function Description() {
       <div className={s.container}>
         <img className={s.banner} src={photos[currentImageIndex]} alt="props" />
         <button className={s.leftButton} onClick={prevImage}>
-          <img src={ChevronLeft} width={100} alt="" />
+          <i class="fa-solid fa-chevron-left fa-2xl"></i>
         </button>
         <button className={s.rightButton} onClick={nextImage}>
-          <img src={ChevronRight} width={100} alt="" />
+          <i class="fa-solid fa-chevron-right fa-2xl"></i>
         </button>
       </div>
 
