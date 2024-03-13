@@ -27,6 +27,18 @@
 .rightButton {
     right: 0; /* Déplacer le bouton de droite tout à droite */
 }
+.currentSlide {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    z-index: 1; /* Assurez-vous que le texte est au-dessus des boutons */
+    font-weight: 400;
+}
+
 
 
 .main_container{

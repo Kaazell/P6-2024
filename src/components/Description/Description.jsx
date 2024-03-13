@@ -40,6 +40,9 @@ export function Description() {
         <button className={s.leftButton} onClick={prevImage}>
           <i class="fa-solid fa-chevron-left fa-2xl"></i>
         </button>
+        <p className={s.currentSlide}>
+          {currentImageIndex + 1} / {photos.length}
+        </p>
         <button className={s.rightButton} onClick={nextImage}>
           <i class="fa-solid fa-chevron-right fa-2xl"></i>
         </button>
