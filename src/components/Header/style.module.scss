@@ -11,15 +11,43 @@
     display: flex;
     list-style-type: none;
     align-items: center;
+    border: 1px black solid;
+    padding: 0;
+    > :nth-child(2) {
+        margin-left: 40px;
+    }
     li {
         font-size: 22px;
         font-weight: 420;
-        margin-left: 60px;
         color: #ff6060;
         letter-spacing: 0.7px;
         &:hover {
             text-decoration: underline;
             cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .logo {
+        height: 70px;
+        width: auto;
+    }
+    .navlink {
+        > :nth-child(2) {
+            margin-left: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .logo {
+        height: 50px;
+        width: auto;
+    }
+    .navlink {
+        li {
+            font-size: 16px;
         }
     }
 }
