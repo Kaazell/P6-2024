@@ -4,6 +4,7 @@ import json from "../../assets/json/logements.json";
 import { useNavigate } from "react-router-dom";
 export function Gallery() {
   const navigate = useNavigate();
+  console.log(json);
   return (
     <div className={s.gallery}>
       {json.map((item) => (

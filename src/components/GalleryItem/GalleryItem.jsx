@@ -11,6 +11,7 @@ export function GalleryItem({ title, picture, currentData }) {
   return (
     <div className={s.galleryItem} onClick={handleClick}>
       <img src={picture[0]} alt={title} />
+      <span>{title}</span>
     </div>
   );
 }

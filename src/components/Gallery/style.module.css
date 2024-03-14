@@ -21,3 +21,11 @@
     align-items: flex-end;
     position: relative;
 }
+
+  
+@media (max-width: 768px) {
+.banner {
+    max-height: 40vh; /* Réduire la hauteur en pourcentage de la hauteur de la fenêtre */
+}
+}
+  
