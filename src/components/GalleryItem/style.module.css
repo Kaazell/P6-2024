@@ -1,9 +1,7 @@
 .galleryItem {
     font-weight: 400;
     color: white;
-    width: 25%;
-    max-width: 344px;
-    min-width: 344px;
+    width: 100%;
     height: 344px;
     background-color: #ff6060;
     box-shadow: inset 0px -90px 60px -50px rgba(0, 0, 0, 0.5);
