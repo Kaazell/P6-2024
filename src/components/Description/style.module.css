@@ -113,3 +113,18 @@
     }
 } 
 
+@media (max-width: 715px) {
+    .upper_section {
+        flex-direction: column;
+    }
+    .author_stars_container {
+        flex-direction: row-reverse;
+        margin-top: 20px;
+    }
+    .lower_section {
+        flex-direction: column;
+        > * {
+            width: 100%;
+        }
+    }
+  }
