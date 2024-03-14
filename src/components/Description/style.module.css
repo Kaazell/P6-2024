@@ -114,6 +114,16 @@
 } 
 
 @media (max-width: 715px) {
+    .banner {
+        height: 280px
+    }
+    .currentSlide {
+        display: none;
+    }
+    .container button {
+        font-size: 10px;
+        margin: 10px;
+    }
     .upper_section {
         flex-direction: column;
     }
