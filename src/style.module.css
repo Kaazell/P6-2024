@@ -3,9 +3,7 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 200;
 }
-/* Styles généraux */
 
-/* Styles pour les écrans de taille inférieure à 716px */
 @media screen and (max-width: 715px) {
     .container {
         margin: 0;
