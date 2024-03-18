@@ -1,9 +1,9 @@
 import montagnes from "../../assets/images/montagnes.png";
 import s from "./style.module.css";
 
-export function BannerAbout(props) {
+export function BannerAbout() {
   return (
-    <div class={s.container}>
+    <div className={s.container}>
       <img
         className={s.banner}
         src={montagnes}

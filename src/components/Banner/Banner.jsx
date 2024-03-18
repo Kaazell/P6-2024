@@ -1,7 +1,7 @@
 import falaise from "../../assets/images/falaise.png";
 import s from "./style.module.css";
 
-export function Banner(props) {
+export function Banner() {
   return (
     <div className={s.container}>
       <img

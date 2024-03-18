@@ -4,12 +4,6 @@ import s from "./style.module.css";
 export function DropdownButton({ buttonText, description, equipement }) {
   const [isOpen, setIsOpen] = useState(false);
 
-  const options = [
-    { id: 1, label: "Climatisation" },
-    { id: 2, label: "Wi-Fi" },
-    { id: 3, label: "Cuisines" },
-  ];
-
   const toggleDropdown = () => setIsOpen(!isOpen);
 
   return (
