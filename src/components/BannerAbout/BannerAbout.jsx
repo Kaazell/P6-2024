@@ -1,4 +1,4 @@
-import falaise from "../../assets/images/falaise.png";
+import montagnes from "../../assets/images/montagnes.png";
 import s from "./style.module.css";
 
 export function BannerAbout(props) {
@@ -6,7 +6,7 @@ export function BannerAbout(props) {
     <div class={s.container}>
       <img
         className={s.banner}
-        src={falaise}
+        src={montagnes}
         alt="Falaise abrupte sur la mer"
       />
     </div>
