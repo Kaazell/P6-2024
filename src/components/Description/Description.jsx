@@ -1,18 +1,14 @@
 import s from "./style.module.css";
 import json from "../../assets/json/logements.json";
 import { useState } from "react";
-import ChevronLeft from "../../assets/images/chevron-left.svg";
-import ChevronRight from "../../assets/images/chevron-right.svg";
 import { FiveStarRating } from "../FiveStarRating/FiveStarRating";
 import { DropdownButton } from "../DropdownButton/DropdownButton";
-import { useLocation } from "react-router-dom";
 import { useParams } from "react-router-dom";
 
 export function Description() {
   const { id } = useParams();
   const currentItem = json.find((item) => item.id === id); // Trouver l'élément correspondant dans votre JSON
-  const location = useLocation();
-  console.log(location.state);
+  console.log(currentItem.id);
   const photos = currentItem.pictures;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -35,16 +31,16 @@ export function Description() {
 
   return (
     <div>
-      <div className={s.container}>
+      <div key={currentItem.id} className={s.container}>
         <img className={s.banner} src={photos[currentImageIndex]} alt="props" />
         <button className={s.leftButton} onClick={prevImage}>
-          <i class="fa-solid fa-chevron-left fa-2xl"></i>
+          <i className="fa-solid fa-chevron-left fa-2xl"></i>
         </button>
         <p className={s.currentSlide}>
           {currentImageIndex + 1} / {photos.length}
         </p>
         <button className={s.rightButton} onClick={nextImage}>
-          <i class="fa-solid fa-chevron-right fa-2xl"></i>
+          <i className="fa-solid fa-chevron-right fa-2xl"></i>
         </button>
       </div>
 
@@ -54,8 +50,8 @@ export function Description() {
             <h1>{currentItem.title}</h1>
             <h2>{currentItem.location}</h2>
             <div className={s.tags}>
-              {currentItem.tags.map((tag) => (
-                <div>{tag}</div>
+              {currentItem.tags.map((tag, index) => (
+                <div key={index}>{tag}</div>
               ))}
             </div>
           </div>

@@ -1,7 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import s from "./style.module.css";
-import { Description } from "../Description/Description";
-import { useLocation } from "react-router-dom";
 
 export function GalleryItem({ title, picture, currentData }) {
   const navigate = useNavigate();

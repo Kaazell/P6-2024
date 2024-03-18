@@ -14,6 +14,7 @@ export function Gallery() {
           onClick={() => navigate("/description/" + item.id)}
         >
           <GalleryItem
+            key={item.id}
             title={item.title}
             picture={item.pictures}
             currentData={item}
